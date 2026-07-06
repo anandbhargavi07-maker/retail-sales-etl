@@ -1,10 +1,10 @@
-# Retail Sales ETL Pipeline
+# Retail Sales ETL Pipeline & Power BI Dashboard
 
 ## Project Overview
 
-This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline using the Global Superstore dataset.
+This project demonstrates an end-to-end Retail Sales ETL pipeline using Python, MySQL, SQL, and Power BI.
 
-The pipeline extracts raw sales data, performs data cleaning and feature engineering with Pandas, loads the transformed data into MySQL, and visualizes key business insights using Power BI.
+The ETL process extracts retail sales data, cleans and transforms it using Pandas, loads the processed data into MySQL, and visualizes key business insights through an interactive Power BI dashboard.
 
 ---
 
@@ -12,36 +12,12 @@ The pipeline extracts raw sales data, performs data cleaning and feature enginee
 
 - Python
 - Pandas
+- NumPy
 - MySQL
+- SQL
 - Power BI
-- VS Code
-
----
-
-## Project Structure
-
-```
-retail-sales-etl/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── scripts/
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│
-├── sql/
-│   └── create_tables.sql
-│
-├── dashboard/
-│   └── Retail_Sales_Dashboard.pbix
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
+- Git
+- GitHub
 
 ---
 
@@ -49,42 +25,89 @@ retail-sales-etl/
 
 ```
 Raw CSV
-      │
-      ▼
-Extract (Python)
-      │
-      ▼
-Transform (Pandas)
-      │
-      ▼
-Load (MySQL)
-      │
-      ▼
+   │
+   ▼
+Python ETL Scripts
+   │
+   ▼
+Data Cleaning & Transformation
+   │
+   ▼
+MySQL Database
+   │
+   ▼
 Power BI Dashboard
 ```
 
 ---
 
-## Dashboard KPIs
+## Dashboard Features
 
-- Total Sales
-- Total Profit
-- Total Orders
-- Total Customers
+- Total Sales KPI
+- Total Profit KPI
+- Total Orders KPI
+- Total Customers KPI
 - Sales by Category
 - Sales by Region
 - Monthly Sales Trend
-- Top 10 Products
 - Profit by Segment
+- Top 10 Products
+- Interactive Slicers
 
 ---
 
-## Dataset
+## Project Structure
 
-Global Superstore Dataset
+```
+dashboard/
+data/
+scripts/
+sql/
+README.md
+requirements.txt
+```
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/anandbhargavi07-maker/retail-sales-etl.git
+
+cd retail-sales-etl
+
+pip install -r requirements.txt
+```
+
+---
+
+## Run ETL
+
+```bash
+python scripts/extract.py
+python scripts/transform.py
+python scripts/load.py
+```
+
+---
+
+## Open Dashboard
+## Dashboard Preview
+
+![Dashboard](dashboard/dashboard.png)
+
+
+Open:
+
+```
+dashboard/Retail_Sales_Dashboard.pbix
+```
+
+using Microsoft Power BI Desktop.
 
 ---
 
 ## Author
 
-Bhargavi Anand
+**Bhargavi Anand**
+
