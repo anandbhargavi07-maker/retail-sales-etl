@@ -94,7 +94,6 @@ python scripts/load.py
 ## Open Dashboard
 ## Dashboard Preview
 
-![Dashboard](dashboard/dashboard.png)
 
 
 Open:
